@@ -1,43 +1,177 @@
+/* Global styles */
 body {
+  background-color: white;
+  color: crimson;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
 }
 
-#header {
-  background-color: #003366;
-  color: #fff;
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  background-color: crimson;
+  color: white;
   padding: 20px;
 }
 
-h1, h2 {
+h1 {
   margin: 0;
+  font-size: 36px;
 }
 
-#content {
-  margin: 20px;
+h2 {
+  margin: 0;
+  font-size: 24px;
 }
 
-h3 {
-  margin-top: 20px;
+/* Navigation styles */
+nav {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 2px solid crimson;
 }
 
-ul {
+nav ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-li::before {
-  content: "•";
-  color: #003366;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+nav li {
+  margin: 0 10px;
 }
 
-p {
+/* Home page styles */
+#home {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Skills page styles */
+#skills {
+  background-color: white;
+  padding: 20px;
+}
+
+.skill-item {
+  display: flex;
   margin-bottom: 10px;
 }
+
+.skill-item p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skill-item span {
+  flex-grow: 1;
+  background-color: crimson;
+  height: 20px;
+  border-radius: 10px;
+}
+
+/* Education page styles */
+#education {
+  background-color: white;
+  padding: 20px;
+}
+
+.edu-item {
+  margin-bottom: 10px;
+}
+
+.edu-item h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.edu-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Experience page styles */
+#experience {
+  background-color: white;
+  padding: 20px;
+}
+
+.exp-item {
+  margin-bottom: 10px;
+}
+
+.exp-item h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.exp-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Projects page styles */
+#projects {
+  background-color: white;
+  padding: 20px;
+}
+
+.proj-item {
+  margin-bottom: 10px;
+}
+
+.proj-item h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.proj-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Animated background styles */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, crimson, white);
+  opacity: 0.5;
+  z-index: -1;
+  animation: animateBackground 30s ease infinite;
+}
+
+.background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top left, white, crimson);
+  opacity: 0.5;
+  z-index: -
